@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/css/style.css')}}">
+    <title>Registro usuario</title>
+</head>
+<body>
+    <header>
+        <img class="logos" src="/Keryn/img/LOGO MAHUAMPI (2).jpg" alt="logo">
+        <div id="menu">
+            <ul>
+                <li><p>Fundación Mahuampi venezuela</p>
+                <p>Migrantes Venezolanos / Colombianos Retorna</p></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>   
+            </ul>
+        </div>
+    </header>
+
+
+            <div class="name">
+            <form action="/usuarios" class="form" method="POST">
+            
+                <h1>Formulario de registro</h1>
+                    <form>
+                        <div class="contain">
+                            <select class="estado" id="est" required name="tipo_dc">
+                                <option value="tipo">Seleccione tipo de documento</option>
+                                <option value="ci">Cedula de Identidad</option>
+                                <option value="ppt">Permiso Protección Temporal</option>
+                            </select>
+                        </div>
+                
+                        
+                        <div class="contain">
+                            <input class="input" type="number" maxlength="50" placeholder="Ingrese documento" required name="documento" autofocus required/>
+                            <label class="select">Numero de documento</label>
+                        </div>   
+            <div class="contain">
+                <p>
+                    <label class="select">Nombres</label>
+                    <input class="input" type="text"  maxlength="50" placeholder="Ingrese Nombre" required name="nombre" autofocus required/>
+                </p>
+            </div>
+
+            <div class="contain">
+                <p>
+                    <label class="select">Apellidos</label>
+                    <input class="input" type="text"  maxlength="50" placeholder="Ingrese apellido" required name="apellido" autofocus required/>
+                </p>
+            </div>
+
+            <div class="contain">
+                <select class="estado" id="est" required name="cargo">
+                    <option value="nuevo">Cargo</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="vicepresidente">Vicepresidente</option>
+                    <option value="tesoreria">Tesoreria</option>
+                    <option value="voluntario">Voluntario</option>
+                </select>
+            </div>v
+
+            <div class="contain">
+                <p>
+                    <label class="select">Dirección</label>
+                    <input class="input" type="text"  maxlength="50" placeholder="Ingrese la dirección" required name="direccion" autofocus required/>
+                </p>
+            </div>
+            <div class="contain">
+                <p>
+                    <label class="select">Telefono</label>
+                    <input class="input" type="number"  maxlength="50" placeholder="Ingrese número de telefono" required name="telefono1" autofocus required/>
+                </p>
+            </div>
+            
+            <div class="contain">
+                <p>
+                    <label class="select">Telefono 2</label>
+                    <input class="input" type="number"  maxlength="50" placeholder="Ingrese número de telefono" required name="telefono2" autofocus required/>
+                </p>
+            </div>
+
+
+            <div class="contain">
+                <p>
+                    <label class="select">Usuario</label>
+                    <input class="input" type="text"  maxlength="50" placeholder="Ingrese el usuario" required name="usuario" autofocus required/>
+                </p>
+            </div>
+            <div class="contain">
+                <p>
+                    <label class="select">Contraseña</label>
+                    <input class="input" type="password"  maxlength="50" placeholder="Ingrese la contraseña" required name="contraseña" autofocus required/>
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="rol">Asignación de rol:</label>
+                <select class="lista"id="rol" required name="roles">
+                    <option value="administrador">Administrador</option>
+                    <option value="vicepresidencia">Vicepresidente</option>
+                    <option value="tesoreria">Tesoreria</option>
+                    <option value="voluntario">Voluntario</option>
+                </select>
+            </div> 
+    
+            <div class="contain">
+            <input type="submit" class="submitBtn" value="Registrar">
+            
+            </div>
+        </form>
+        </div>
+    </form>
+</body>
+</html>
