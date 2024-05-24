@@ -26,28 +26,36 @@ drop table personas;
 
 use caracterizacion;
 create table informacion_personal(
-Num_doc int primary  key not null,
 Direccion_Residencia varchar (20) not null,
-Barrio varchar(60) not null, 
-Num_cuar_doc int not null,
+Barrio varchar(60) not null,
+Localidad varchar (20) not null,
+Trabajo varchar (20) not null,
+Correo varchar(20) not null,
+Telefono_1 int not null,
+Telefono_2 int not null,
+Cuar_Doc varchar (20) not null,
+Num_cuar_doc  int not null primary key,
 Grado_Instruccion varchar (60) not null,
 Area_instruccion varchar(60) not null,
 Situacion_Migratoria varchar (60) not null,
 Cant_cargafam int not null,
-FOREIGN KEY(Num_doc)  REFERENCES personas (Num_doc)
+FOREIGN KEY(Num_cuar_doc )  REFERENCES personas (Num_doc)
 );
+
+
 
 drop table informacion_personal;
 
 use caracterizacion;
 create table informacion_medica(
-Num_doc int primary  key not null,
+Num_Doc int not null primary key,
 Discapacidad varchar(60) not null, 
 Desc_Discapacidad varchar (200)  not null,
 Cond_Medica varchar (60) not null,
 Desc_Medica varchar (200) not null,
 FOREIGN KEY(Num_doc)  REFERENCES personas (Num_doc)
 );
+
 
 
 use caracterizacion;
@@ -60,7 +68,6 @@ Ape_ref varchar (60) not null,
 Fecha_Nacimiento date not null, 
 Edad int not null,
 Sexo varchar (12) not null, 
-Direc_ref varchar (60) not null,
 Telef_1_ref int not null,
 Telef_2_ref int not null,
 Parentesco varchar (200) not null,

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/css/style.css')}}">
+    <title>Registro usuario</title>
+</head>
+<body>
+    <header>
+        <img class="logos" src="/Keryn/img/LOGO MAHUAMPI (2).jpg" alt="logo">
+        <div id="menu">
+            <ul>
+                <li><p>Fundación Mahuampi venezuela</p>
+                <p>Migrantes Venezolanos / Colombianos Retorna</p></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>   
+            </ul>
+        </div>
+    </header>
+
+
+      <div class="container">
+        <h1>Bienvenido, {{session['usuario']}}</h1>
+        <p class="inicio">Inicio de sesion correctamente</p>
+        <h1>Canciones</h1>
+        
+        <table>
+            <tr>
+                <th>Tipo de documento</th>
+                <th>Documento</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cargo</th>
+                <th>Direccion</th>
+                <th>Telefono 1</th>
+                <th>Telefono 2</th>
+                <th>Nombre Usuario</th>
+                <th>Contraseña</th>
+                <th>Rol</th>
+            </tr>
+    
+            <tbody>
+                {% for usuarios in usuarios %}
+            <tr>
+                <td>{{usuario[0]}}</td>
+                <td>{{usuario[1]}}</td>
+                <td>{{usuario[2]}}</td>
+                <td>{{usuario[3]}}</td>
+                <td>{{usuario[4]}}</td>
+                <td>{{usuario[5]}}</td>
+                <td>{{usuario[6]}}</td>
+                <td>{{usuario[7]}}</td>
+                <td>{{usuario[8]}}</td>
+                <td>{{usuario[9]}}</td>
+                <td>{{usuario[10]}}</td>
+                <td>
+                    <a href="{{ url_for([0])}}">Editar</a>
+                    <a href="{{ url_for([0]) }}">Eliminar</a>
+                </td>
+            </tr>
+                {% endfor %}
+            </tbody>
+        
+    </table>
+       
+    </div>
+    
+    <div >
+        <button type="submit" class="boton" href="/logout">Cerrar sesion</button>
+    </div>
+    
+
+</body>
+</html>
