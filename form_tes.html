@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Fundación Mahuampi</title>
+</head>
+<body>
+    <header>
+        <img class="logos" src="/Keryn/img/LOGO MAHUAMPI (2).jpg" alt="logo">
+        <div id="menu">
+         
+            <ul>
+                <li><p>Fundación Mahuampi venezuela</p>
+                <p>Migrantes Venezolanos / Colombianos Retorna</p></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <fieldset class="form1">
+        <h1>Registro de beneficiarios</h1>
+
+        <div class="contain">
+            <select class="estado" id="est" name="tipo_documento">
+                <option value="tipodoc">Seleccione tipo de documento</option>
+                <option value="cedulaciudadania">Cedula de Ciudadania</option>
+                <option value="cedulaidentidad">Cedula de Identidad</option>
+                <option value="pasaporte">Pasaporte</option>
+            </select>
+        </div>
+
+        
+        <div class="contain">
+            <input class="input" type="text" name="num_doc" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+            <label class="select">Numero de documento</label>
+        </div>
+
+        <div class="contain">
+            <select class="estado" id="est" name="vig_doc">
+                <option value="vig_doc">Vigencia Documento de Identidad</option>
+                <option value="vigente">Vigente</option>
+                <option value="vencido">Vencido</option> 
+            </select>
+        </div>
+
+           
+            <div class="contain">
+                <input class="input" type="text" name="nombres" maxlength="50" placeholder="Nombre beneficiario" autofocus required/>
+                <label class="select">Nombres</label>
+            </div>
+
+            <div class="contain">
+                <input class="input" type="text" name="apellidos" maxlength="50" placeholder="Apellido beneficiario" autofocus required/>
+                <label class="select">Apellidos</label>
+            </div>
+            
+            
+
+            <div class="contain">
+                <input class="input" type="date" name="fecha_nac" placeholder="YYYY/MM/DD"/>
+                <label class="select">Fecha de nacimiento</label>
+            </div>
+            
+            <div class="contain" name="sexo">
+                <select class="estado" id="est">
+                    <option value="sexo">Seleccione sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option> 
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="contain" name="pasaporte">
+                <select class="estado" id="est">
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option> 
+                </select>
+            </div>
+            
+            <div class="contain">
+                <select class="estado" id="est" name="vig_pasaporte">
+                    <option value="vig_passp">Vigencia Pasaporte</option>
+                    <option value="vigente">Vigente</option>
+                    <option value="vencido">Vencido</option> 
+                </select>
+            </div>
+
+            <div class="contain">
+                <input class="input" type="number" name="num_pas" maxlength="50" placeholder="Ingrese número de pasaporte"/>
+                <label class="select">Numero de Pasaporte</label>
+            </div>
+
+
+            <div class="contain">
+                <input class="input" type="number" name="edad" maxlength="50" placeholder="Ingrese edad" autofocus required/>
+                <label class="select">Edad</label>
+            </div>
+
+
+            <div class="contain">
+                <select class="estado" id="est" name="seg_doc">
+                    <option value="nuevo">Segundo documento</option>
+                    <option value="nuevo">Permiso Protección Temporal</option>
+                    <option value="usado">Cedula Extranjeria</option>
+                    <option value="usado">Permiso Especial de Permanencia</option>
+                    <option value="usado">No tiene otro documento</option>
+                </select>
+            </div>
+            <div class="contain">
+                <input class="input" type="text" name="numseg_doc" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+            <div class="contain">
+                <select class="estado" id="est" name="ter_doc">
+                    <option value="nuevo">Tercer documento</option>
+                    <option value="nuevo">Permiso Protección Temporal</option>
+                    <option value="usado">Cedula Extranjeria</option>
+                    <option value="usado">Permiso Especial de Permanencia</option>
+                    <option value="usado">No tiene otro documento</option>
+                </select>
+            </div>
+            <div class="contain">
+                <input class="input" type="text" name="numter_doc" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Realizar registro">
+            </div>
+
+            <div class="button2">
+                <input type="submit" class="submitBtn2" value="Buscar">
+            </div>
+
+            <div class="button2">
+                <input type="submit" class="submitBtn2" value="Editar informacion">
+            </div>
+           
+           
+
+    </fieldset>
+
+
+        <div class="name">
+            <form action="" class="form2">
+
+                <h1>Información Personal</h1>
+
+            <div class="contain2">
+                <input class="input" type="number" name="num_doc" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+            <div class="contain2">
+                <input class="input" type="text" name="dir_res" maxlength="50" placeholder="Ingrese direccion de residencia" autofocus required/>
+                <label class="select">Dirección</label>
+            </div>
+
+            <div class="contain2">
+                <input class="input" type="text" name="barrio" maxlength="50" placeholder="Barrio" autofocus required/>
+                <label class="select">Barrio</label>
+            </div>
+
+            <div class="contain2">
+                <input class="input" type="text" name="localidad" maxlength="50" placeholder="Localidad" autofocus required/>
+                <label class="select">Localidad</label>
+            </div>       
+
+            <div class="contain2">
+                <select class="estado" id="est" name="trabajo">
+                    <option value="trabaja">Trabaja Actualmente</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option> 
+                </select>
+            </div>
+           
+            <div class="contain2">
+                <input class="input" type="text" name="dir_trab" maxlength="50" placeholder="Ingrese direccion de trabajo" autofocus required/>
+                <label class="select">Dirección de trabajo</label>
+            </div> 
+
+            <div class="contain2">
+                <input class="input" type="email" name="correo" maxlength="50" placeholder="Ingrese corrreo electronico" autofocus required/>
+                <label class="select">Correo Electronico</label>
+            </div>
+            
+            <div class="contain2">
+                <input class="input" type="number" name="num_1" maxlength="50" placeholder="Ingrese número de teléfono" autofocus required/>
+                <label class="select">Número de teléfono principal</label>
+            </div>
+            
+            <div class="contain2">
+                <input class="input" type="number" name="num_2" maxlength="50" placeholder="Ingrese número de teléfono" autofocus required/>
+                <label class="select">Número de teléfono secundario</label>
+            </div>
+
+            <div class="contain2">
+                <select class="estado" id="est" name="cuar_doc">
+                    <option value="nuevo">Cuarto documento</option>
+                    <option value="salvoconducto">Salvocondunto</option>
+                    <option value="no">No tiene otro documento</option>
+                </select>
+            </div>
+            <div class="contain2">
+                <input class="input" type="number" name="num_cuardoc" maxlength="50" placeholder="Ingrese documento"/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+            <div class="contain2">
+                <select class="estado" id="est" name="instruccion">
+                    <option value="grado">Grado de Instrucción</option>
+                    <option value="nuevo">Primaria</option>
+                    <option value="usado">Bachiller</option>
+                    <option value="nuevo">Tecnico Superior Universitario</option>
+                    <option value="usado">Universitario</option>
+                    <option value="nuevo">Maestría</option>
+                    <option value="usado">No tiene</option>
+                </select>
+            </div>
+            <div class="contain2">
+                <input class="input" type="email" name="area" maxlength="200" placeholder="Ingrese área de instrucción" autofocus required/>
+                <label class="select">Área de instrucción</label>
+            </div>
+            <div class="contain2">
+                <select class="estado" id="est" name="est_mig">
+                    <option value="estado_migratorio">Estado Migratorio</option>
+                    <option value="regularizado">Regularizado</option>
+                    <option value="sin_regularizar">Sin Regularizar</option>
+                </select>
+            </div>
+            
+           
+           
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Guardar Información">
+            </div>
+           
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Editar Información">
+            </div>
+
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Eliminar Información">
+            </div>
+        
+        </div>
+           
+        </form>
+
+        
+        <div class="name">
+            <form action="" class="form3">
+
+                <h1>Información Médica</h1>
+
+            <div class="contain3">
+                <input class="input" type="number" name="num_doc" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+            <div class="contain3">
+                <select class="estado" id="est" name="discapacidad">
+                    <option value="trabaja">Discapacidad</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option> 
+                </select>
+            </div>
+
+            <div class="contain3">
+                <input class="input" type="text" name="desc_disc" maxlength="200" placeholder="Descripcion" autofocus required/>
+                <label class="select">Descripcion de la Discapacidad</label>
+            </div>
+  
+
+            <div class="contain3">
+                <select class="estado" id="est" name="cond_med">
+                    <option value="trabaja">Condición médica</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option> 
+                </select>
+            </div>
+           
+            
+            <div class="contain3">
+                <input class="input" type="text" name="des_cond_med" maxlength="50" placeholder="Condición médica" autofocus required/>
+                <label class="select">Describa la condición médica</label>
+            </div>     
+           
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Guardar Información">
+            </div>
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Editar Información">
+            </div>
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Eliminar Información">
+            </div>
+        </form>
+        </div>
+
+        
+        <div class="name">
+            <form action="" class="form4">
+
+                <h1>Familiares</h1>
+        <div class="contain4">
+            <select class="estado" id="est" name="tip_doc">
+                <option value="nuevo">Seleccione tipo de documento</option>
+                <option value="nuevo">Cedula de Ciudadania</option>
+                <option value="usado">Cedula de Identidad</option>
+            </select>
+        </div>
+
+        
+        <div class="contain4">
+            <input class="input" type="text" name="num_doc" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+            <label class="select">Numero de documento</label>
+        </div>
+
+        <div class="contain4">
+            <select class="estado" id="est" name="vig_doc_id">
+                <option value="pasaporte">Vigencia Documento de Identidad</option>
+                <option value="vigente">Vigente</option>
+                <option value="vencido">Vencido</option> 
+            </select>
+        </div>
+
+            <div class="contain4">
+                <input class="input" type="text" name="nom_ref" maxlength="50" placeholder="Nombre beneficiario" autofocus required/>
+                <label class="select">Nombres</label>
+            </div>
+
+            <div class="contain4">
+                <input class="input" type="text" name="ape_ref" maxlength="50" placeholder="Apellido beneficiario" autofocus required/>
+                <label class="select">Apellidos</label>
+            </div>
+
+            <div class="contain4">
+                <input class="input" type="date" name="fec_nac" placeholder="YYYY/MM/DD"/>
+                <label class="select">Fecha de nacimiento</label>
+            </div>
+            
+           
+            <div class="contain4">
+                <input class="input" type="number" name="edad_ref" maxlength="50" placeholder="Ingrese edad" autofocus required/>
+                <label class="select">Edad</label>
+            </div>
+               
+                <select class="estado" id="est" nom="sex_ref">
+                    <option value="sexo">Seleccione sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option> 
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            
+           
+            <div class="contain4">
+                <input class="input" type="text" name="dir_ref" maxlength="50" placeholder="Ingrese direccion de residencia" autofocus required/>
+                <label class="select">Dirección</label>
+            </div>
+
+            <div class="contain4">
+                <input class="input" type="number" name="telefono" maxlength="50" placeholder="Ingrese número de teléfono 1" autofocus required/>
+                <label class="select">Teléfono</label>
+            </div>
+
+            <div class="contain4">
+                <input class="input" type="number" name="telefono2" maxlength="50" placeholder="Ingrese número de teléfono 2" autofocus required/>
+                <label class="select">Teléfono 2</label>
+            </div>
+
+            <div class="contain4">
+                <select class="estado" id="est" name="parentesco">
+                    <option value="parentesco">Parentesco</option>
+                    <option value="esposo">Esposo/a</option>
+                    <option value="conyugue">Conyugue</option>
+                    <option value="hijos">Hijo/a</option> 
+                    <option value="padre">Padre</option>
+                    <option value="madre">Madre</option>
+                    <option value="suegros">Suegro/a</option>
+                </select>
+            </div>
+
+            <div class="contain4">
+                <select class="estado" id="est" name="seg_doc_ref">
+                    <option value="nuevo">Segundo documento</option>
+                    <option value="nuevo">Permiso Protección Temporal</option>
+                    <option value="usado">Cedula Extranjeria</option>
+                    <option value="usado">Salvocondunto</option>
+                    <option value="usado">No tiene otro documento</option>
+                </select>
+            </div>
+            <div class="contain4">
+                <input class="input" type="text" name="num_segdoc_ref" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+            <div class="contain4">
+                <select class="estado" id="est" name="ter_doc_ref">
+                    <option value="nuevo">Tercer documento</option>
+                    <option value="nuevo">Permiso Protección Temporal</option>
+                    <option value="usado">Cedula Extranjeria</option>
+                    <option value="usado">Salvocondunto</option>
+                    <option value="usado">No tiene otro documento</option>
+                </select>
+            </div>
+            <div class="contain4">
+                <input class="input" type="text" name="num_terdoc_ref" maxlength="50" placeholder="Ingrese documento" autofocus required/>
+                <label class="select">Numero de documento</label>
+            </div>
+
+            <div class="contain4">
+                <input class="input" type="text" name="observaciones" maxlength="300" placeholder="Ingrese observaciones" autofocus required/>
+                <label class="select">observaciones</label>
+            </div>
+
+          
+
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Guardar Información">
+            </div>
+            
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Editar Información">
+            </div>
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Agregar otro">
+            </div>
+
+            <div class="button">
+                <input type="submit" class="submitBtn" value="Elimar Información">
+            </div>
+        </form>
+
+</div>
+
+
+
+
+
+
